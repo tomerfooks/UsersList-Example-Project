@@ -1,0 +1,28 @@
+.row {
+  max-width: 1200px;
+  min-height: 560px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  display: block;
+  .half,
+  .third,
+  .fourth,
+  .fifth {
+    float: left;
+  }
+  .half {
+    width: 50%;
+  }
+  .third {
+    width: 33.3%;
+  }
+  .fourth {
+    width: 25%;
+  }
+  .fifth {
+    width: 20%;
+  }
+}
+.content {
+  display: grid;
+}

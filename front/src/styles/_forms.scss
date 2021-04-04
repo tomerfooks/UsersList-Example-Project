@@ -1,0 +1,21 @@
+input,
+button {
+	padding: 10px 20px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	width: -webkit-fill-available;
+	text-align: left;
+	margin: 6px 0;
+	border-radius: 30px;
+}
+button {
+	text-align: center;
+	font-weight: bold;
+	background-color: #333;
+	color: white;
+}
+button:hover {
+	opacity: 0.8;
+	transition: 0.2s;
+	cursor: pointer;
+}

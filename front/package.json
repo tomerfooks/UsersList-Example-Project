@@ -1,0 +1,45 @@
+{
+  "name": "wppfront",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "dotenv": "^8.2.0",
+    "js-cookie": "^2.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "node-sass": "^4.14.1",
+    "paypal-checkout": "^4.0.318",
+    "public-ip": "^4.0.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-paypal-button-v2": "^2.6.2",
+    "react-paypal-checkout": "^1.0.9",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-simple-animate": "^3.3.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deployFront": "npm run build && aws s3 sync build/ s3://pluginsbox --acl public-read"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
